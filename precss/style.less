@@ -116,6 +116,37 @@ a{
 
 }
 
+
+	.contracts2 {
+    	color:white;
+        display: flex;
+        .btn {
+        	color:white;
+        	background:#40d66a;
+        	
+        	white-space: nowrap;
+        	.gilroy-bold();
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 35px;
+            
+        }
+        span {
+        	white-space: nowrap;
+        	.gilroy-bold();
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+            color:white;
+          
+            align-self: center;
+        }
+    }
+
+
 .header__bottom{
 	.row-flex();
 	justify-content: center;
@@ -181,14 +212,16 @@ header{
 		
 		&__items{
 			
-			display: flex;
+			.row-flex();
 			justify-content: space-around;
-			
+			.size(12);
+			.col();
 			.md(justify-content, center); 
 			
 			& li{
 				height: 221px;
 				display: flex;
+
 				flex-direction: column;
 				justify-content: space-around;
 				align-items:center;
@@ -197,6 +230,7 @@ header{
 				.md(margin-top, 20px);
 				.size-xs(12);
 				.gilroy-bold();
+
 
 				text-align: center;
 				flex-grow: 1;
@@ -218,7 +252,6 @@ header{
 					
 				}
 				& p{
-					display: block;
 					width: 300px;
 				}
 				&:last-child img{
